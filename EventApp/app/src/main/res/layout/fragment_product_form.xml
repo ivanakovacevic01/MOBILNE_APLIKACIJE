@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/page_background"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:background="@color/page_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+        <TextView
+            android:textColor="@color/view_green"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Product form"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            />
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llcatProduct"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:text="Category"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/twCategory"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                />
+            <Spinner
+                android:id="@+id/spinnerProductCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:id="@+id/llsubcatProduct"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Subcategory"
+                android:textStyle="bold"
+                />
+            <Spinner
+                android:id="@+id/spinnerProductSubcategory"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/twSubcatSuggestion"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold" />
+            <Button
+                android:backgroundTint="@color/view_green"
+                android:id="@+id/subcategory_suggestion"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                >
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:text="Event type"
+                android:textStyle="bold"
+
+                />
+            <Spinner
+                android:id="@+id/spinnerProductEventType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:entries="@array/event_type_array"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:gravity="center_vertical"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/nameProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Description"
+                android:gravity="center_vertical"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/descriptionProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Price"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:id="@+id/priceProduct"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Discount"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:id="@+id/discountProduct"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Available"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                />
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/availableProduct"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Yes"
+                    android:layout_marginTop="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/notAvailableProduct"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:text="No"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Visibile"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                />
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/visibleProduct"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Yes"
+                    android:layout_marginTop="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/notVisibleProduct"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="No"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/pupImages"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/photoLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Ovdje će se dinamički dodati slike -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <Button
+            android:backgroundTint="@color/view_green"
+            android:layout_marginTop="65dp"
+            android:layout_marginLeft="184dp"
+            android:id="@+id/uploadCompanyPhotoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="UPLOAD PHOTO"/>
+        </RelativeLayout>
+
+        <Button
+            android:backgroundTint="@color/view_green"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnSubmit"
+            android:text="SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</FrameLayout>
+</ScrollView>

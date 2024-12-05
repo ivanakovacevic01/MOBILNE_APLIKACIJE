@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <item android:id="@+id/employeeProfile"
+        android:title="MY PROFILE"
+        android:orderInCategory="700"/>
+    <item android:id="@+id/overviewFragment"
+        android:title="@string/home_page"
+        android:orderInCategory="600"/>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_management"
+            android:title="MANAGMENT OF">
+
+            <menu>
+                <item android:id="@+id/nav_products"
+                    android:title="@string/products"
+                    android:orderInCategory="200" />
+
+
+
+                <item android:id="@+id/serviceFragment"
+                    android:title="@string/services"
+                    android:orderInCategory="300"/>
+
+
+                <item android:id="@+id/packagePageFragment"
+                    android:title="PACKAGES"
+                    android:orderInCategory="400"/>
+                <item android:id="@+id/priceList"
+                    android:title="PRICE LISTS"
+                    android:orderInCategory="400"/>
+            </menu>
+        </item>
+        <item android:id="@+id/reports"
+            android:title="REPORTS"
+            android:orderInCategory="400"/>
+
+        <item android:id="@+id/event_fragment"
+            android:title="@string/events"
+            android:orderInCategory="500"/>
+
+        <item android:id="@+id/eventTypesPageFragment"
+            android:title="@string/event_types1"
+            android:orderInCategory="1100"/>
+
+        <item android:id="@+id/categoriesPageFragment"
+            android:title="@string/categories_capital"
+            android:orderInCategory="900"/>
+        <item android:id="@+id/employeesPageFragment"
+            android:title="@string/employees1"
+            android:orderInCategory="800"/>
+
+        <item android:id="@+id/subcategorySuggestionPageFragment"
+            android:title="@string/subcategory_suggestions"
+            android:orderInCategory="1000"/>
+
+        <item android:id="@+id/reservationPageFragment"
+            android:title="@string/reservations"
+            android:orderInCategory="1200"/>
+
+        <item android:id="@+id/ownerRequestsPageFragment"
+            android:title="REQUESTS"
+            android:orderInCategory="1300"/>
+
+        <item android:id="@+id/mainActivity"
+            android:title="LOG OUT"
+            android:orderInCategory="2500"/>
+        <item android:id="@+id/notificationsPage"
+            android:title="NOTIFICATIONS"
+            android:orderInCategory="1200"/>
+
+        <item android:id="@+id/chatFragment"
+            android:title="CHAT"
+            android:orderInCategory="1300"/>
+        <item android:id="@+id/myProfile"
+            android:title="MY PROFILE"
+            android:orderInCategory="1400"/>
+    </group>
+</menu>

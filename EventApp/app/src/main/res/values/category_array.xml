@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_array">
+        <item>Hrana, ketering, torte i kolači</item>
+        <item>Smeštaj</item>
+        <item>Muzika i zabava</item>
+        <item>Foto i video</item>
+        <item>Dekoracija i rasveta</item>
+        <item>Nega i lepota</item>
+        <item>Garderoba i stilizovanje</item>
+        <item>Logistika i obezbeđenje</item>
+        <item>Planiranje i koordinacija</item>
+    </string-array>
+</resources>

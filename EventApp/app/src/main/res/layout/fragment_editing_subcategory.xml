@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    tools:context=".fragments.administration.EditingSubcategoryFragment"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/page_background"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/TitleText"
+        android:text="@string/edit_subcategory"
+        android:textColor="@color/view_green"
+        />
+    <EditText
+        android:id="@+id/editTextCategoryName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        style="@style/EditTextWithIcon"
+        android:hint="@string/name1"
+        android:autofillHints="name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextCategoryDescription"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        style="@style/AboutTextView"
+        android:hint="@string/description1"
+        android:autofillHints="text"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:id="@+id/subcategType"
+        android:layout_width="350dp"
+        android:layout_height="30dp"
+        style="@style/EditTextWithIcon"
+        android:text="@string/subcategory_type"/>
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:background="@drawable/spinnes_border"
+        android:entries="@array/subcategory_types"/>
+
+    <!-- submitttt-->
+    <Button
+        android:id="@+id/submitEditSubcategoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/view_green"/>
+
+</LinearLayout>

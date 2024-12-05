@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "695013295231",
+    "firebase_url": "https://eventapp-62b4a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "eventapp-62b4a",
+    "storage_bucket": "eventapp-62b4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:695013295231:android:4c9e973c5da7e8d4846b4a",
+        "android_client_info": {
+          "package_name": "com.example.eventapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBH6YirIvypEqa9SQnAl5Fvb78MqWzt8PE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="690dp"
+    tools:context=".fragments.administration.AddingEventTypeFragment"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/page_background"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/TitleText"
+        android:text="@string/new_event_type"
+        android:textColor="@color/view_green"
+        />
+    <EditText
+        android:id="@+id/editTextEventTypeName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        style="@style/EditTextWithIcon"
+        android:hint="@string/name1"
+        android:autofillHints="name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextEventTypeDescription"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        style="@style/AboutTextView"
+        android:hint="@string/description1"
+        android:autofillHints="text"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        />
+
+    <TextView
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:text="@string/suggested_subcategories"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_marginBottom="16dp"
+        android:padding="2dp">
+
+        <TableLayout
+            android:id="@+id/suggestedSubcategoriesTable"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+
+
+
+    <!-- submitttt-->
+    <Button
+        android:id="@+id/submitNewEventTypeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/view_green"/>
+
+</LinearLayout>

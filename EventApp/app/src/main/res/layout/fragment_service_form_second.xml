@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context=".fragments.services.ServiceFormSecondFragment">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@color/page_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Location"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <Spinner
+                android:id="@+id/spinnerLocationService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.3"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Service performers"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <Spinner
+                android:id="@+id/spinnerServicePerformers"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:entries="@array/performers_array"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Reservation deadline"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/deadlineService"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                >
+            </EditText>
+           <TextView
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:text="days"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               ></TextView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Cancellation period"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/cancelationService"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                >
+            </EditText>
+           <TextView
+               android:layout_marginTop="10dp"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:text="days"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent">
+           </TextView>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Acceptance"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/manualService"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Manual"
+                    android:layout_marginTop="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/automaticService"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:layout_width="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="match_parent"
+                    android:text="Automatic"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Available"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/availableService"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Yes"
+                    android:layout_marginTop="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/notAvailableService"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="No"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Visibile"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/visibleService"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Yes"
+                    android:layout_marginTop="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/notVisibleService"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="No"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/pupImages"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:scaleType="fitXY"
+
+                >
+
+                <LinearLayout
+                    android:id="@+id/photoLinearLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Ovdje će se dinamički dodati slike -->
+
+                </LinearLayout>
+            </HorizontalScrollView>
+            <Button
+                android:backgroundTint="@color/view_green"
+                android:layout_marginTop="135dp"
+                android:layout_marginLeft="190dp"
+                android:id="@+id/uploadCompanyPhotoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="UPLOAD PHOTO"/>
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:backgroundTint="@color/view_green"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnSubmit"
+            android:text="SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</FrameLayout>

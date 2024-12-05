@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#014a27</color>
+    <color name="colorSecondary">#026636</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="gray">#929692</color>
+    <color name="lightGray">#D6D6D6</color>
+    <color name="spinner_background_color">#F5F5F5</color>
+    <color name="spinner_stroke_color">#CCCCCC</color>
+    <color name="spinner_text_color">#000000</color>
+    <color name="price_color">#E3735E</color>
+
+    <color name="light_green">#bee3ba</color>
+    <color name="view_green">#009c61</color>
+    <color name="view_light_green">#3ca369</color>
+    <color name="floating_button_color">#f7ce32</color>
+    <color name="cart_background">#fff4c4</color>
+    <color name="page_background">#fffbeb</color>
+    <color name="dark_blue">#0a1247</color>
+    <color name="light_blue">#c9f2eb</color>
+    <color name="blue">#0000FF</color>
+    <color name="transparentna">#000000</color>
+    <color name="add_green">#BFEA7C</color>
+    <color name="remove_red">#E38A8A</color>
+    <color name="free">#C3FF93</color>
+    <color name="not_free">#FFAF61</color>
+
+</resources>

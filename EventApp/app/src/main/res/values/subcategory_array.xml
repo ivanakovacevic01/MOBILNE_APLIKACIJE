@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="subcategory_array">
+        <item>Ketegring i priprema hrane</item>
+        <item>Planiranje menija</item>
+        <item>Iznajmljivanje ugostiteljskih objekata za događaje</item>
+        <item>Hrana za događaje</item>
+        <item>Pića</item>
+        <item>Torte, slatkiši, voće</item>
+        <item>Specijalni proizvodi</item>
+        <item>Fotografisanje</item>
+        <item>Videografija</item>
+        <item>Snimanje dronom</item>
+
+    </string-array>
+</resources>

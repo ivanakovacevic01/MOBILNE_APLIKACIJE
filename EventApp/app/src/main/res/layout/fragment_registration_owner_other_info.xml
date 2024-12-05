@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="end"
+    android:layout_marginTop="30dp"
+    android:background="@color/page_background">
+
+
+
+    <!-- Naslov -->
+    <TextView
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/offerings_selection"
+        android:textColor="@color/view_green"/>
+
+    <!-- kateg-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/categories"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="16dp"
+        android:padding="2dp">
+
+        <TableLayout
+            android:id="@+id/categoryTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+
+    <!--tipovi dog-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event_types"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginBottom="16dp"
+        android:padding="2dp">
+
+        <TableLayout
+            android:id="@+id/eventTypeTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/next3RegistrationOwnerButton"
+        android:layout_width="81dp"
+        android:layout_gravity="end"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/black"
+        android:backgroundTint="@color/view_green">
+
+        <TextView
+            android:id="@+id/nextButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/nextButtonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/baseline_arrow_forward_24" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

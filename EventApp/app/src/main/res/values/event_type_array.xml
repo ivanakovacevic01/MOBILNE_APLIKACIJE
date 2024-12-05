@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_type_array">
+        <item>Svadbe</item>
+        <item>Veridbe</item>
+        <item>Rođendani</item>
+        <item>Godišnjice</item>
+        <item>Krštenja</item>
+        <item>Rođenja</item>
+        <item>Porodična okupljanja i proslave</item>
+        <item>Mature i proslave diploma</item>
+        <item>Bebine zabave (baby showers) i krštenja</item>
+        <item>Konferencije i seminari</item>
+        <item>Team building događaji</item>
+        <item>Godišnje korporativne zabave</item>
+        <item>Proizvodne prezentacije i lansiranja</item>
+        <item>Sajmovi i izložbe</item>
+        <item>Radionice i obuke</item>
+        <item>Networking događaji</item>
+        <item>Akademske konferencije</item>
+        <item>Simpozijumi</item>
+        <item>Panel diskusije</item>
+        <item>Gostujuća predavanja</item>
+        <item>Obrazovne radionice</item>
+        <item>Festivali (muzički, filmski, umetnički)</item>
+        <item>Koncerti i muzički nastupi</item>
+        <item>Pozorišne predstave</item>
+        <item>Izložbe i umetničke galerije</item>
+        <item>Književne večeri i čitanja</item>
+        <item>Turniri i prvenstva</item>
+        <item>Humanitarne trke i maratoni</item>
+        <item>Sportski kampovi i klinike</item>
+        <item>Demonstracije</item>
+        <item>Gala večere i aukcije</item>
+        <item>Dobrotvorne trke i sportski događaji</item>
+        <item>Kampanje za prikupljanje sredstava</item>
+        <item>Državne ceremonije i proslave</item>
+        <item>Politički skupovi i kampanje</item>
+        <item>Diplomatski prijemi</item>
+        <item>Drugo</item>
+    </string-array>
+</resources>

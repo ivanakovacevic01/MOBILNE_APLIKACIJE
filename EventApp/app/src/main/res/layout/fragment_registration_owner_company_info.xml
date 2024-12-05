@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp"
+android:background="@android:color/white"
+tools:context=".fragments.registration.RegistrationOwnerCompanyInfoFragment"
+android:layout_marginTop="30dp"
+android:backgroundTint="@color/page_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+<TextView
+    android:id="@+id/textViewTitle"
+    style="@style/TitleText"
+    android:text="@string/firm_information"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:textColor="@color/view_green"/>
+
+            <TextView
+                android:id="@+id/compType"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="30dp"
+                android:text="Type:"/>
+            <Spinner
+                android:id="@+id/spinnerCompType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+
+                android:background="@drawable/spinnes_border"
+                android:entries="@array/firm_types"
+                app:layout_constraintTop_toBottomOf="@+id/compType"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+            <EditText
+    android:id="@+id/editTextEmail"
+    style="@style/EditTextWithIcon"
+    android:hint="@string/email_address"
+    android:inputType="textEmailAddress"
+    app:layout_constraintTop_toBottomOf="@+id/spinnerCompType"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:autofillHints="emailAddress"
+    android:layout_marginTop="30dp"/>
+
+
+
+
+<EditText
+    android:id="@+id/editTextName"
+    style="@style/EditTextWithIcon"
+    android:hint="@string/name1"
+    app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:autofillHints="name"
+    android:inputType="text"/>
+
+
+
+
+            <EditText
+                android:id="@+id/editTextStreet"
+                style="@style/EditTextWithIcon"
+                android:hint="@string/street"
+                app:layout_constraintTop_toBottomOf="@+id/editTextName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="address"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/editTextStreetN"
+                style="@style/EditTextWithIcon"
+                android:hint="@string/streetN"
+                app:layout_constraintTop_toBottomOf="@+id/editTextStreet"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="address"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/editTextCity"
+                style="@style/EditTextWithIcon"
+                android:hint="@string/city"
+                app:layout_constraintTop_toBottomOf="@+id/editTextStreetN"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="address"
+                android:inputType="text"/>
+            <EditText
+                android:id="@+id/editTextCountry"
+                style="@style/EditTextWithIcon"
+                android:hint="@string/country"
+                app:layout_constraintTop_toBottomOf="@+id/editTextCity"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:autofillHints="address"
+                android:inputType="text"/>
+
+
+
+<EditText
+    android:id="@+id/editTextPhoneNumber"
+    style="@style/EditTextWithIcon"
+    android:hint="@string/phone_number"
+    android:inputType="phone"
+    app:layout_constraintTop_toBottomOf="@+id/editTextCountry"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:autofillHints="phone"/>
+
+<EditText
+    android:id="@+id/editTextAboutCompany"
+    style="@style/AboutTextView"
+    android:hint="@string/about_company"
+    android:inputType="textMultiLine"
+    app:layout_constraintTop_toBottomOf="@+id/editTextPhoneNumber"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:autofillHints="text"
+    android:gravity="top"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="@color/lightGray"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAboutCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+    <HorizontalScrollView
+        android:id="@+id/pupImages"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAboutCompany"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/page_background">
+
+        <LinearLayout
+            android:id="@+id/photoLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Ovdje ce se dinamicki dodati slike -->
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+        <ImageView
+            android:id="@+id/uploadCompanyPhotoButton"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/upload_photo"
+            android:src="@drawable/baseline_add_a_photo_24"
+            android:layout_marginLeft="68dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/next2RegistrationOwnerButton"
+        android:layout_width="81dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:backgroundTint="@color/view_green">
+
+        <TextView
+            android:id="@+id/nextButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/nextButtonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/baseline_arrow_forward_24" />
+    </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout></ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

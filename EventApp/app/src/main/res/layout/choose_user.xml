@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_user2"
+            android:textColor="@color/view_green"
+            android:layout_gravity="center"/>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            tools:listitem="@layout/user_detail_card"
+            android:id="@+id/userList"
+            android:scrollbars="horizontal|vertical"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:backgroundTint="@color/view_green"
+                android:layout_marginStart="230dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/backButton"
+                android:layout_gravity="right"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

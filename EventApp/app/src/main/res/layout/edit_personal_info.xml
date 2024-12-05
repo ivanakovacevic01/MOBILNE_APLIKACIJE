@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/editEmployeeTextPicture"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/profile_photo"
+            android:src="@drawable/profile_picture"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/editEmployeeTextName"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/editEmployeeTextLastName"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editEmployeeTextEmail"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="@string/email_address"
+            android:inputType="text"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp" />
+        <EditText
+            android:id="@+id/editEmployeeTextPhone"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="@string/phone_number"
+            android:inputType="text"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_green"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewAdress"
+                style="@style/TitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@color/view_green"
+                android:layout_gravity="left"
+                android:textSize="17dp" />
+            <EditText
+                android:id="@+id/editFirmTextStreet"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:hint="@string/street"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/editFirmTextStreetN"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:hint="@string/streetN"
+                android:inputType="number" />
+            <EditText
+                android:id="@+id/editFirmTextCity"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:hint="@string/city"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/editFirmTextCountry"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:hint="@string/country"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/change_pass"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/view_green"
+            android:id="@+id/changePassButton"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_changes"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/view_green"
+            android:id="@+id/save"/>
+    </LinearLayout>
+</ScrollView>

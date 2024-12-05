@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.services.ServiceFormFragment"
+    android:background="@color/page_background"
+    >
+
+    <ScrollView
+        android:background="@color/page_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_margin="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:textColor="@color/view_green"
+
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:text="Service information"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Description"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Specifics"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/specifics"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Category - Subcategory"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Event type"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/event"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Location"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Service performers"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/performers"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Acceptance"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/acceptance"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Price for hour"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/pricePH"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Discount"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/discount"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="40dp"
+                android:text="Discount price"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/discountPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+               ></TextView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Available"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/available"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Visible"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/visible"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Minimum duration"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/minimumDuration"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Maximum duration"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/maximumDuration"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:text="Reservation deadline"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reservationDeadline"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="10dp"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Cancellation deadline"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cancelationDeadline"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_marginTop="5dp"
+            android:id="@+id/pupImages"
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:scaleType="fitXY"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/photoLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Ovdje će se dinamički dodati slike -->
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            >
+            <Button
+                android:backgroundTint="@color/view_green"
+                android:id="@+id/btnEdit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Edit"
+                android:layout_alignParentLeft="true"
+                />
+            <Button
+                android:backgroundTint="@color/view_green"
+                android:id="@+id/btnDelete"
+                android:layout_alignParentRight="true"
+
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Delete"/>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btnCompanyInfo"
+            android:layout_width="380dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/view_green"
+            android:text="@string/company_info" />
+        <Button
+            android:id="@+id/btnReserve"
+            android:layout_width="380dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/view_green"
+            android:text="Reserve" />
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:layout_width="380dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/view_green"
+            android:text="@string/send_message" />
+
+        <Button
+            android:id="@+id/btnFavourite"
+            android:layout_width="380dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/view_green"
+            android:text="@string/add_to_favourites"/>
+
+    </LinearLayout>
+
+</ScrollView>
+</ScrollView>

@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/border_background"
+    android:id="@+id/request_cart_item">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <!-- Labela "Name" -->
+        <TextView
+            android:id="@+id/textViewStatusLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16dp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Owner -->
+            <TextView
+                android:id="@+id/textViewNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Owner email -->
+            <TextView
+                android:id="@+id/textViewOwnerEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner email: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewOwnerEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Firm -->
+            <TextView
+                android:id="@+id/textViewFirmLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firm: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewFirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Firm email -->
+            <TextView
+                android:id="@+id/textViewFirmEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Firm email: "
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textViewFirmEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="end"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="5dp">
+
+            <!-- Dugme edit -->
+            <ImageView
+                android:id="@+id/imageViewAcceptRequest"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/accept"
+                android:contentDescription="@string/accept" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="0dp"/>
+
+            <!-- Dugme za brisanje -->
+            <ImageView
+                android:id="@+id/imageViewRejectRequest"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/baseline_cancel_24"
+                android:contentDescription="@string/delete" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Dugme za potkateg -->
+    <Button
+        android:id="@+id/buttonDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PERSONAL DATA"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/view_green"/>
+    <Button
+        android:id="@+id/buttonFirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FIRM"
+        android:layout_gravity="end"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/view_green"/>
+
+</LinearLayout>

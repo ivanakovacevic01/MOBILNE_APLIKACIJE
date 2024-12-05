@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="events">
+        <item>All</item>
+        <item>Vencanje T i M</item>
+        <item>Ivanino krstenje</item>
+        <item>Rođendan Anje Ducic</item>
+    </string-array>
+</resources>

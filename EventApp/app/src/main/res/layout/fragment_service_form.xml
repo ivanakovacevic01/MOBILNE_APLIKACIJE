@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context=".fragments.services.ServiceFormFragment">
+
+    <FrameLayout
+        android:background="@color/page_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <TextView
+        android:textColor="@color/view_green"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Service form"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="60dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llcatService"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Category"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <Spinner
+                android:id="@+id/spinnerServiceCategory"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:id="@+id/llsubcatService"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Subcategory"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <Spinner
+                android:id="@+id/spinnerServiceSubcategory"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/tworAdd"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+            <Button
+                android:backgroundTint="@color/view_green"
+                android:id="@+id/subcategory_suggestion"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                >
+
+            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Event type"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <Spinner
+                android:id="@+id/spinnerServiceEventType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/event_type_array"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/nameService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Description"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/descriptionService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Specifics"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/specificsService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Price for hour"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <EditText
+                android:id="@+id/pricePerHourService"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                >
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Discount"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <EditText
+                android:id="@+id/discountService"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:text="Min - Max duration (h)"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <EditText
+                android:id="@+id/minHService"
+                android:textStyle="bold"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="7dp"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <EditText
+                android:id="@+id/maxHService"
+                android:textStyle="bold"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                >
+            </EditText>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="Or duration (h)"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <EditText
+                android:id="@+id/dHService"
+                android:textStyle="bold"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:inputType="number"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:backgroundTint="@color/view_green"
+            android:layout_marginLeft="225dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/btnNext"
+            android:text="NEXT ->"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_gravity="right">
+        </Button>
+
+    </LinearLayout>
+
+
+</FrameLayout>
+</ScrollView>

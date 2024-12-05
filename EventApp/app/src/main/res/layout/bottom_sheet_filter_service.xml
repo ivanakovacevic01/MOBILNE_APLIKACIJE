@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:backgroundTint="@color/page_background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="@string/filters"
+            android:textAlignment="viewStart"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="@color/light_green"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_margin="2dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+        <TextView
+            android:layout_marginStart="10dp"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category"/>
+        <Spinner
+            android:id="@+id/spinCat"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/category_array"
+            android:layout_weight="0.3"
+            android:text="@string/category"
+            android:tooltipText="@string/category"
+            android:contentDescription="@string/category"
+            />
+
+
+        <TextView
+            android:layout_marginStart="10dp"
+
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/subcategory"/>
+        <Spinner
+            android:id="@+id/spinSubcat"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/subcategory_array"
+            android:layout_weight="0.3"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eventtype"/>
+    <Spinner
+        android:id="@+id/spinEvent"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:entries="@array/event_type_array"
+        android:layout_weight="0.3"
+
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="2dp">
+        <TextView
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/price"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="MIN"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:id="@+id/priceServiceMin"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                >
+            </EditText>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="MAX"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+
+                />
+            <EditText
+                android:id="@+id/priceServiceMax"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                >
+            </EditText>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/available"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp">
+            <RadioButton
+                android:id="@+id/availableService"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Available"
+                android:textStyle="bold">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/notAvailableService"
+                android:textStyle="bold"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Not available">
+
+            </RadioButton>
+            <RadioButton
+                android:id="@+id/allService"
+                android:textStyle="bold"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="All">
+
+            </RadioButton>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee performing the service"/>
+
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/editTextFilterPerformers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="textAutoComplete" />
+    <Button
+        android:id="@+id/applyFilterService"
+        android:backgroundTint="@color/view_green"
+        android:text="@string/apply"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </Button>
+    <Button
+        android:id="@+id/discardFilterService"
+        android:backgroundTint="@color/view_green"
+        android:text="DISCARD"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </Button>
+</LinearLayout>

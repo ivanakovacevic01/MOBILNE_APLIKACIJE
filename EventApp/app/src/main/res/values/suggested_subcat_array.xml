@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sugg_subcategory_array">
+        <item>Ketegring i priprema hrane</item>
+        <item>Planiranje menija</item>
+
+    </string-array>
+</resources>

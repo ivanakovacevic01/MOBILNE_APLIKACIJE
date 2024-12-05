@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="end"
+    tools:context=".fragments.eventOrganizer.EmployeesForPackageReservationFragment"
+    android:background="@color/page_background">
+
+
+
+    <TextView
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose employee"
+        android:textColor="@color/view_green"/>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="210dp"
+        android:layout_marginBottom="16dp"
+        android:padding="2dp">
+
+        <TableLayout
+            android:id="@+id/employeesTable"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+    <RelativeLayout
+        android:id="@+id/nextServiceRegistrationButton"
+        android:layout_width="81dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:background="@android:color/black"
+        android:backgroundTint="@color/view_light_green">
+
+        <TextView
+            android:id="@+id/nextButtonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/next"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/nextButtonIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/baseline_arrow_forward_24" />
+    </RelativeLayout>
+
+</LinearLayout>

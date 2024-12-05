@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/page_background"
+    tools:context=".fragments.packages.PackageFormFragment">
+
+
+    <TextView
+        android:textColor="@color/view_green"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Package form"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/packageName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCatPackage"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/categoryTw"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <Spinner
+                android:id="@+id/spinnerPackageCategory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="0.3"
+                android:text="@string/category"
+                android:tooltipText="@string/category"
+                android:contentDescription="@string/category"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:backgroundTint="@color/view_green"
+                android:layout_marginLeft="20dp"
+                android:text="PRODUCTS"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addProductToPackage"
+                android:layout_width="120dp"
+                android:layout_height="40dp"></Button>
+            <Button
+                android:backgroundTint="@color/view_green"
+                android:layout_marginLeft="60dp"
+                android:text="SERVICES"
+                android:layout_marginTop="10dp"
+                android:id="@+id/addServiceToPackage"
+                android:layout_width="120dp"
+                android:layout_height="40dp"></Button>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Description"
+                android:textStyle="bold"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/packageDescription"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                >
+            </EditText>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Discount"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <EditText
+                android:id="@+id/packageDiscount"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:inputType="numberDecimal"
+                >
+            </EditText>
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Price"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/packagePrice"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Available"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/availablePackage"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Yes"
+                    />
+                <RadioButton
+                    android:id="@+id/notAvailablePackage"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="No"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="Visibile"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/visiblePackage"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Yes"
+                    />
+                <RadioButton
+                    android:id="@+id/notVisiblePackage"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="No"
+                    />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Reservation period"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/reservationPeriodPackage"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_marginTop="10dp"
+
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:text="Cancellation period"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/cancelationPeriodPackage"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:backgroundTint="@color/view_green"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/btnSubmit"
+            android:text="SUBMIT"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        </Button>
+
+    </LinearLayout>
+
+</FrameLayout>

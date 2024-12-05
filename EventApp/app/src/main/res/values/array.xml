@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinnerItems">
+        <item>All</item>
+        <item>Products</item>
+        <item>Packages</item>
+        <item>Services</item>
+    </string-array>
+</resources>

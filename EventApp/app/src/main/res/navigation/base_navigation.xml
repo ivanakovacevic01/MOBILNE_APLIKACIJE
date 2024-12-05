@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_navigation"
+    app:startDestination="@+id/overviewFragment">
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.eventapp.activities.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/reservationPageFragment"
+        android:name="com.example.eventapp.fragments.reservations.ReservationPageFragment"
+        android:label="Reservations"
+        tools:layout="@layout/fragment_reservation_page" />
+
+
+
+    <fragment
+        android:id="@+id/serviceFragment"
+        android:name="com.example.eventapp.fragments.services.ServiceFragment"
+        android:label="Services"
+        tools:layout="@layout/fragment_service"
+
+        />
+
+<fragment
+    android:id="@+id/nav_products"
+    android:name="com.example.eventapp.fragments.products.ProductsPageFragment"
+    android:label="Products"
+    tools:layout="@layout/fragment_products_page"
+    />
+
+<fragment
+    android:id="@+id/employeesPageFragment"
+    android:name="com.example.eventapp.fragments.employees.EmployeesPageFragment"
+    android:label="Employees"
+    tools:layout="@layout/fragment_employees_page"
+
+    />
+
+
+
+
+    <fragment
+        android:id="@+id/overviewFragment"
+        android:name="com.example.eventapp.fragments.HomePageFragment"
+        android:label="Home Page"
+        tools:layout="@layout/all_filters_view" />
+
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.eventapp.fragments.ChatOverviewFragment"
+        android:label="Home Page"
+        tools:layout="@layout/chat_list" />
+
+    <fragment
+        android:id="@+id/event_fragment"
+        android:name="com.example.eventapp.fragments.eventOrganizer.EventFragment"
+        android:label="Event"
+        tools:layout="@layout/fragment_event"/>
+
+    <fragment
+        android:id="@+id/categoriesPageFragment"
+        android:name="com.example.eventapp.fragments.administration.CategoriesPageFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories_page" />
+    <fragment
+        android:id="@+id/subcategorySuggestionPageFragment"
+        android:name="com.example.eventapp.fragments.administration.SubcategorySuggestionPageFragment"
+        android:label="Subcategory suggestions"
+        tools:layout="@layout/fragment_subcategory_suggestion_page" />
+    <fragment
+        android:id="@+id/eventTypesPageFragment"
+        android:name="com.example.eventapp.fragments.administration.EventTypesPageFragment"
+        android:label="Event types"
+        tools:layout="@layout/fragment_event_types_page" />
+
+    <fragment
+        android:id="@+id/packagePageFragment"
+        android:name="com.example.eventapp.fragments.packages.PackagePageFragment"
+        android:label="Packages"
+        tools:layout="@layout/fragment_package_page" />
+    <fragment
+        android:id="@+id/employeeProfile"
+        android:name="com.example.eventapp.fragments.employees.EmployeeProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_employee_details" />
+    <fragment
+        android:id="@+id/priceList"
+        android:label="Price list"
+        android:name="com.example.eventapp.fragments.pricelists.PriceList"
+        tools:layout="@layout/fragment_price_list" />
+    <fragment
+        android:id="@+id/ownerRequestsPageFragment"
+        android:name="com.example.eventapp.fragments.administration.OwnerRequestsPageFragment"
+        android:label="Requests"
+        tools:layout="@layout/fragment_owner_requests_page" />
+
+    <fragment
+        android:id="@+id/reports"
+        android:name="com.example.eventapp.fragments.reports.AllReportsFragment"
+        android:label="Reports"
+        tools:layout="@layout/fragment_all_reports" />
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="com.example.eventapp.fragments.UserProfile"
+        android:label="Profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/notificationsPage"
+        android:name="com.example.eventapp.fragments.NotificationsPage"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_notifications_page" />
+
+    <fragment
+        android:id="@+id/myProfile"
+        android:name="com.example.eventapp.fragments.employees.MyProfilePageFragment"
+        android:label="My Profile"
+        tools:layout="@layout/fragment_employee_profile" />
+</navigation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/border_background"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="1.0"
+        android:isIndicator="true"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is a comment."
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="12sp"
+        android:textColor="@android:color/darker_gray" />
+    <Button
+        android:id="@+id/btnReportComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Review"
+        android:layout_gravity="end"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/view_green"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp" />
+
+</LinearLayout>

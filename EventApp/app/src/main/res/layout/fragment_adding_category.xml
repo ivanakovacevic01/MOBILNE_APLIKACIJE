@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context=".fragments.administration.AddingCategoryFragment"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/page_background">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/TitleText"
+        android:text="@string/new_category"
+        android:textColor="@color/view_green"
+        />
+    <EditText
+        android:id="@+id/editTextCategoryName"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        style="@style/EditTextWithIcon"
+        android:hint="@string/name1"
+        android:autofillHints="name"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editTextCategoryDescription"
+        android:layout_width="350dp"
+        android:layout_height="120dp"
+        style="@style/AboutTextView"
+        android:hint="@string/description1"
+        android:autofillHints="text"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        />
+
+    <!-- submitttt-->
+    <Button
+        android:id="@+id/submitNewCategoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:backgroundTint="@color/view_green"/>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.reservations.ServiceReservationTimeFragment">
+
+    <!-- Natpis "From" -->
+    <TextView
+        android:id="@+id/textViewFromLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- TimePicker za "From" vreme -->
+    <TimePicker
+        android:id="@+id/timePickerFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:timePickerMode="spinner" />
+
+    <!-- Natpis "To" -->
+    <TextView
+        android:id="@+id/textViewToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- TimePicker za "To" vreme -->
+    <TimePicker
+        android:id="@+id/timePickerTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/submitTimeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:backgroundTint="@color/view_green"/>
+
+
+</LinearLayout>

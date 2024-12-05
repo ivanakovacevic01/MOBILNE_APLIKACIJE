@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="guest_age_groups">
+        <item>0 - 3</item>
+        <item>3 - 10</item>
+        <item>10 - 18</item>
+        <item>18 - 30</item>
+        <item>30 - 50</item>
+        <item>50 - 30</item>
+        <item>70+</item>
+    </string-array>
+</resources>
